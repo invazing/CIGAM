@@ -63,7 +63,7 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 │   └── lapis.png  
 │
 └── WinFormsUI  (CAMADA DE FORMS)
-    └── frmClienteCadastro.vb (
+    └── frmClienteCadastro.vb
     └── frmClientePesquisa.vb
 ```
 

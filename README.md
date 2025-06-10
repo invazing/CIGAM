@@ -65,6 +65,7 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 └── WinFormsUI  (CAMADA DE FORMS)
     └── frmClienteCadastro.vb (
     └── frmClientePesquisa.vb
+```
 
 ---
 
@@ -72,7 +73,6 @@ Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 
 - O projeto utiliza `OleDbConnection` para conexão com banco de dados Access, mas pode ser adaptado para outros SGBDs.
 - O campo `CODIGO` é considerado a **chave primária** da tabela `CLIENTE`.
-- Regras como validação de CPF, prevenção de duplicidades e transações podem ser adicionadas na camada `Service` para maior robustez.
 
 ---
 

@@ -5,18 +5,6 @@ Este projeto segue uma arquitetura em **camadas**, com separação clara de resp
 
 ---
 
-### 📐 Camadas da Aplicação
-
-| Camada              | Responsabilidade                                                                 | Classes / Interfaces                      |
-|---------------------|-----------------------------------------------------------------------------------|--------------------------------------------|
-| **UI (Interface)**   | Interface gráfica (Forms). Recebe ações do usuário e exibe resultados.           | `FormCliente` (não incluído aqui, mas esperado) |
-| **Service Layer**    | Camada de regras de negócio. Orquestra as ações entre a UI e o repositório.      | `ClienteService`                           |
-| **Repository Layer** | Responsável por acessar diretamente o banco de dados (CRUD).                     | `ClienteRepository`, `IClienteRepository`  |
-| **Domain / Model**   | Representa as entidades de domínio da aplicação.                                 | `Cliente`                                   |
-| **Contracts**        | Interface que define os contratos de acesso a dados (Repository).                | `IClienteRepository`                       |
-
----
-
 ### 🔁 Fluxo de Execução
 
 Exemplo: **Salvar um cliente**
@@ -29,16 +17,34 @@ Exemplo: **Salvar um cliente**
 
 ---
 
-### ✅ Benefícios da Arquitetura
+### 🚀 Como Executar
 
-- **Baixo acoplamento:** Cada camada conhece apenas a imediatamente inferior.
-- **Alta coesão:** Cada classe tem uma única responsabilidade.
-- **Facilidade de testes:** É possível simular o repositório (mock) e testar regras de negócio sem banco de dados real.
-- **Flexibilidade:** É possível trocar o banco de dados (Access, SQL Server, etc) sem alterar o restante do código, bastando implementar a interface `IClienteRepository`.
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/invazing/CIGAM
+```
+
+## 2. Apontar o banco de dados
+
+Altere a String de conexão do banco de dados `ConnectionString.vb`:
+
+' Módulo que guarda a string de conexão com o banco de dados Access
+Public Module ConnectionString
+
+    ' String de conexão pronta para usar com o banco Access (.accdb)
+    ' Usa o provedor OLEDB da Microsoft e aponta para o caminho do arquivo do banco
+    Public ReadOnly StringConexao As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\manel\source\repos\CIGAM\CIGAM\Database.accdb;"
+
+End Module
+
+## 3. Rodar o projeto
+
+Abra a solução no Visual Studio 2022, compile e pressione F5 para executar.
 
 ---
 
-### 📦 Estrutura de Pastas Sugerida
+### 📦 Estrutura de Pastas
 
 ```text
 /Domain

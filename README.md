@@ -40,3 +40,34 @@ Exemplo: **Salvar um cliente**
 
 ### 📦 Estrutura de Pastas Sugerida
 
+/Projeto
+│
+├── Models
+│ └── Cliente.vb
+│
+├── Services
+│ └── ClienteService.vb
+│
+├── Repositories
+│ ├── IClienteRepository.vb
+│ └── ClienteRepository.vb
+│
+├── Forms
+│ └── FormCliente.vb (UI)
+│
+├── Utils
+│ └── ConnectionString.vb
+│
+└── README.md
+
+---
+
+### 💡 Observações
+
+- O projeto utiliza `OleDbConnection` para conexão com banco de dados Access, mas pode ser adaptado para outros SGBDs.
+- O campo `CODIGO` é considerado a **chave primária** da tabela `CLIENTE`.
+- Regras como validação de CPF, prevenção de duplicidades e transações podem ser adicionadas na camada `Service` para maior robustez.
+
+---
+
+

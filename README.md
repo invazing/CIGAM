@@ -1,4 +1,4 @@
-### CIGAM
+### CIGAM - PROJETO EM VB
 ## 🧠 Arquitetura e Camadas do Projeto
 
 Este projeto segue uma arquitetura em **camadas**, com separação clara de responsabilidades, facilitando a manutenção, testes e evolução da aplicação.

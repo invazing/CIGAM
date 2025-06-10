@@ -40,25 +40,30 @@ Exemplo: **Salvar um cliente**
 
 ### 📦 Estrutura de Pastas Sugerida
 
-/Projeto
+```text
+/Domain
 │
-├── Models
-│ └── Cliente.vb
+├── Application
+│   └── ClienteService.vb  (CAMADA DE SERVIÇOS)
 │
-├── Services
-│ └── ClienteService.vb
+├── Data
+│   └── ClienteRepository.vb  (CAMADA DE BANCO)
 │
-├── Repositories
-│ ├── IClienteRepository.vb
-│ └── ClienteRepository.vb
+├── Entities
+│   └── Cliente.vb  (CAMADA DE CLASSE)
 │
-├── Forms
-│ └── FormCliente.vb (UI)
+├── Interfaces
+│   └── IClienteRepository.vb (CAMADA DE INTERFACE)
 │
-├── Utils
-│ └── ConnectionString.vb
+├── Infrastructure  (STRING DE CONEXÃO)
+│   └── ConnectionString 
 │
-└── README.md
+├── Resources  (CAMADA DE RECURSO)
+│   └── lapis.png  
+│
+└── WinFormsUI  (CAMADA DE FORMS)
+    └── frmClienteCadastro.vb (
+    └── frmClientePesquisa.vb
 
 ---
 

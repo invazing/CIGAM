@@ -31,7 +31,7 @@ Altere a String de conexão do banco de dados `ConnectionString.vb`:
 
 Módulo que guarda a string de conexão com o banco de dados Access
 
-    ' Public ReadOnly StringConexao As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\manel\source\repos\CIGAM\CIGAM\Database.accdb;"
+    ' Public ReadOnly StringConexao As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\source\repos\CIGAM\CIGAM\Database.accdb;"
 
 ## 3. Rodar o projeto
 
